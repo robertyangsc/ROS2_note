@@ -46,7 +46,7 @@ ros2 pkg create --build-type ament_cmake --dependencies rclcpp --node-name node_
 # 【关键点1】CMake 查找 OpenCV 时必须注意大小写，且不带数字 "2"
 find_package(OpenCV REQUIRED)
 
-# 2. 包含头文件目录
+# 2. 包含头文件目录是
 ament_target_dependencies(
   node_apple_detect
   "rclcpp"
